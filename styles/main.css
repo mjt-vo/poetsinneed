@@ -55,7 +55,7 @@ a {
 body {
   box-sizing: border-box;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 100%;
 }
@@ -63,7 +63,6 @@ body {
 section {
   display: flex;
   justify-content: center;
-  border-top: 1px solid;
   width: 100%;
 }
 
@@ -78,9 +77,12 @@ section.cover {
 
 .content {
   box-sizing: border-box;
-  padding: 100px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 200px 20px;
   width: 100%;
-  max-width: 1020px;
+  max-width: 1040px;
   min-height: 100vh;
 }
 
@@ -95,31 +97,32 @@ img {
       /* typography  */
       /* * * * * * * */
 
-h1 {
-  position: absolute;
+.cover h1 {
   top: calc(50% + 40px);
   left: calc(50% - 100px);
   box-sizing: border-box;
+  border-bottom: none;
   padding: 20px 20px 0px;
   width: 450px;
   height: 115px;
-  font-size: 6rem;
-  font-weight: 400;
   font-style: italic;
   text-align: center;
   background-color: var(--color-highlight);
   transition: background-color .3s;
 }
-h1:hover {
+.cover h1:hover {
   background-color: var(--color-hover);
   cursor: pointer;
 }
 
-h2 {
+h1 {
+  position: absolute;
+  top: 80px;
   display: inline-block;
   margin-bottom: var(--spacing-l);
   border-bottom: 2px solid var(--color-highlight);
   font-size: 6rem;
+  font-weight: 400;
   font-style: italic;
 }
 
@@ -134,7 +137,7 @@ p:last-child {
   margin-bottom: 0;
 }
 p.footnote {
-  margin-top: var(--spacing-l);
+  margin-top: var(--spacing-xs);
   font-size: 2rem;
   font-style: italic;
   text-indent: 0;
@@ -171,22 +174,24 @@ menu {
   border: 2px solid var(--color-hover);
   padding-inline-start: 0;
   padding: 10px 0;
-  width: 100px;
+  min-width: 100px;
   text-align: center;
-  background: #c7d5c7f0;
+  background: var(--color-bg);
 }
 
 menu li {
   font-size: 2.25rem;
-  cursor: pointer;
   outline-offset: 5px;
 }
-menu .scroll-toggle + .scroll-toggle {
-  display: inline-block;
-  margin-top: 7px;
+menu li + li {
+  margin-top: 5px;
 }
-menu li:hover {
+menu li:hover,
+menu li.current {
   font-style: italic;
+}
+menu li.current {
+  color: var(--color-highlight);
 }
 
       /* * * * * * * * * */
