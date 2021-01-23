@@ -1,0 +1,66 @@
+<html lang="en" class="home">
+
+<head>
+  <title>Poets in Need</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+  <script language="javascript" type="text/javascript" src="./scripts/scroll.js"></script>
+</head>
+
+<body>
+
+  <menu>
+    <a href="#" class="scroll-toggle" data-section="about"><li>about</li></a>
+    <a href="#" class="scroll-toggle" data-section="donate"><li>donate</li></a>
+    <a href="#" class="scroll-toggle" data-section="contact"><li>contact</li></a>
+  </menu>
+
+  <section class="cover">
+    <img src="images/Whalen.jpeg" />
+    <a href="#" class="scroll-toggle" data-section="about"><h1>poets in need</h1></a>  
+  </section>
+
+  <section class="about" id="section-about">
+    <div class="content">
+      <h2>about</h2>
+      <p><strong><em>poets in need</em></strong> is a non-profit organization founded in 2000 providing emergency
+        assistance to poets who have an established presence in the literary community as innovators in the field and a
+        substantive body of published work.</p>
+      <p>Assistance is given only in cases of current financial need that is in excess of and unrelated to the recipient’s
+        normal economic situation and that is the result of recent emergency (due, for example, to fire, flood, eviction,
+        or a medical crisis).</p>
+      <p class="footnote">* Portrait of Philip Whalen &copy; John Suiter, unauthorized reproduction prohibited.</p>
+    </div>
+  </section>
+
+  <section class="donate" id="section-donate">
+    <div class="content">
+      <h2>donate</h2>
+      <p>Please make a tax-deductible donation to <em>poets in need</em> today. Checks made payable to “Poets in Need” can be sent to:</p>
+      <p class="address"><em>Poets in Need</em></p>
+      <p class="address">P.O. Box 12345</p>
+      <p class="address">New York, NY, 10000</p>
+    </div>
+  </section>
+
+  <section class="contact" id="section-contact">
+    <div class="content">
+      <h2>contact</h2>
+      <p class="address"><strong><a href="mailto:info@poetsinneed.com">info@poetsinneed.com</a></strong></p>
+    </div>
+  </section>
+
+  <script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', () => {
+      document.querySelector('html').classList.add('ready');
+      initScroll();
+    });
+  </script>
+</body>
+
+</html>
