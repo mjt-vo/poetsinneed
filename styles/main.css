@@ -218,7 +218,7 @@ menu li.current {
   }
   img {
     float: none;
-    max-width: 300px;
+    max-width: 500px;
   }
   menu {
     border: 2px solid var(--color-highlight);
