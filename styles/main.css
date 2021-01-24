@@ -202,15 +202,21 @@ menu a {
     display: block;
     height: 100%;
   }
+  .content {
+    min-height: 0;
+  }
   h1:not(.main) {
     top: 100px;
   }
   h1.main {
     box-sizing: border-box;
-    bottom: 50px;
+    bottom: 30px;
     right: 0;
     border: none;
     width: 100%;
+  }
+  h1.main:hover {
+    background-color: transparent;
   }
   img {
     float: none;
