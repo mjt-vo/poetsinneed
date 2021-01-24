@@ -5,6 +5,7 @@
 :root {
   --color-main: #000;
   --color-bg: #c7d5c7;
+  --color-home-bg: #1d202e;
   --color-highlight: mintcream;
   --color-hover: #e3e3e3;
   --spacing-xs: 10px;
@@ -19,6 +20,9 @@ html {
   font-size: 10px;
   color: var(--color-main);
   background: var(--color-bg);
+}
+html.home {
+  background: var(--color-home-bg);
 }
 
 body {
