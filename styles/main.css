@@ -111,10 +111,10 @@ h1.main {
   font-style: italic;
   text-align: center;
   color: var(--color-highlight);
-  transition: background-color 0.25s;
+  transition: background-color 0.3s;
 }
 h1.main:hover {
-  background-color: rgba(0,0,0,.4);
+  background-color: rgba(0,0,0,.15);
 }
 
 p {
@@ -226,6 +226,7 @@ menu a {
     float: none;
   }
   menu {
+    position: absolute;
     border: 2px solid var(--color-highlight);
   }
   .home menu {
