@@ -213,6 +213,13 @@ menu li.current {
   html {
     font-size: 8px;
   }
+  :not(.home) h1 {
+    top: 100px;
+  }
+  img {
+    float: none;
+    max-width: 300px;
+  }
   menu {
     border: 2px solid var(--color-highlight);
   }
