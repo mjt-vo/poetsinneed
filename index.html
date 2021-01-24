@@ -27,7 +27,9 @@
 
   <script type="text/javascript">
     window.addEventListener('DOMContentLoaded', () => {
-      document.querySelector('html').classList.add('ready');
+      setTimeout(() => {
+        document.querySelector('html').classList.add('ready');
+      }, 500);
     });
   </script>
 </body>
