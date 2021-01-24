@@ -197,11 +197,16 @@ menu a {
   html {
     font-size: 8px;
   }
+  section {
+    display: block;
+    height: auto;
+  }
   h1:not(.main) {
     top: 100px;
   }
   h1.main {
     box-sizing: border-box;
+    bottom: 100px;
     right: 0;
     border: none;
     width: 100%;
