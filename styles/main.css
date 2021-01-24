@@ -67,12 +67,13 @@ section {
 }
 
 section.cover {
+  align-items: flex-start;
   position: relative;
-  justify-content: left;
-  align-items: center;
   border-top: none;
   height: 100vh;
-  width: 700px;
+  width: 100vw;
+  background: url(/images/Whalen-cover.jpeg);
+  background-size: cover; 
 }
 
 .content {
@@ -97,33 +98,33 @@ img {
       /* typography  */
       /* * * * * * * */
 
-.cover h1 {
-  top: calc(50% + 40px);
-  left: calc(50% - 100px);
-  box-sizing: border-box;
-  border-bottom: none;
-  padding: 20px 20px 0px;
-  width: 450px;
-  height: 115px;
-  font-style: italic;
-  text-align: center;
-  background-color: var(--color-highlight);
-  transition: background-color .3s;
-}
-.cover h1:hover {
-  background-color: var(--color-hover);
-  cursor: pointer;
-}
-
 h1 {
   position: absolute;
-  top: 80px;
   display: inline-block;
   margin-bottom: var(--spacing-l);
   border-bottom: 2px solid var(--color-highlight);
   font-size: 6rem;
   font-weight: 400;
   font-style: italic;
+}
+:not(.home) h1 {
+  top: 80px;
+}
+
+.home h1 {
+  z-index: 1;
+  top: calc(100% - 150px);
+  right: 70px;
+  border-bottom: 0;
+  padding: 10px 50px;
+  font-style: italic;
+  text-align: center;
+  color: var(--color-highlight);
+  background-color: rgb(0 0 0 / 20%);
+  transition: background-color .25s;
+}
+.home h1:hover {
+  background-color: rgb(0 0 0 / 40%);
 }
 
 p {
@@ -177,6 +178,10 @@ menu {
   min-width: 100px;
   text-align: center;
   background: var(--color-bg);
+}
+
+.home menu {
+  border: 2px solid transparent;
 }
 
 menu li {
