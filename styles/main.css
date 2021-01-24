@@ -224,6 +224,10 @@ menu a {
   menu {
     border: 2px solid var(--color-highlight);
   }
+  .home menu {
+    left: 20px;
+    right: auto;
+  }
   menu li.current:first-child + li {
     margin-top: 0;
   }
