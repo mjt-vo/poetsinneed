@@ -67,7 +67,7 @@ section.cover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 200px 20px;
+  padding: 220px 20px;
   width: 100%;
   max-width: 1000px;
   min-height: 100vh;
@@ -98,7 +98,7 @@ h1 {
   font-style: italic;
 }
 h1:not(.main) {
-  top: 80px;
+  top: 100px;
 }
 
 h1.main {
@@ -206,9 +206,6 @@ menu a {
   }
   .content {
     min-height: 0;
-  }
-  h1:not(.main) {
-    top: 100px;
   }
   h1.main {
     box-sizing: border-box;
