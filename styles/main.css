@@ -140,6 +140,7 @@ p:last-child {
 p.footnote {
   margin-top: var(--spacing-xs);
   font-size: 2rem;
+  line-height: 3.4rem;
   font-style: italic;
   text-indent: 0;
 }
@@ -205,6 +206,12 @@ menu li.current {
 
 @media (max-width: 1000px) {
   html {
-    font-size: 9px;
+    font-size: 8px;
+  }
+  menu li.current:first-child + li {
+    margin-top: 0;
+  }
+  menu li.current {
+    display: none;
   }
 }
