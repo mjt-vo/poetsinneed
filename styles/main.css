@@ -197,9 +197,10 @@ menu a {
   html {
     font-size: 8px;
   }
-  section {
+  section,
+  section.cover {
     display: block;
-    height: auto;
+    height: 100%;
   }
   h1:not(.main) {
     top: 100px;
