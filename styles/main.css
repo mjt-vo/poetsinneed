@@ -87,11 +87,16 @@ section.cover {
   min-height: 100vh;
 }
 
+.image-wrapper {
+  margin-top: 30px;
+  display: block;
+}
 img {
+  float: left;
+  margin-right: 20px;
   box-sizing: border-box;
-  border: 2px solid var(--color-highlight);
-  padding: 10px;
-  width: 350px;
+  margin-bottom: var(--spacing-xs);
+  width: 250px;
 }
 
       /* * * * * * * */
@@ -207,6 +212,9 @@ menu li.current {
 @media (max-width: 1000px) {
   html {
     font-size: 8px;
+  }
+  menu {
+    border: 2px solid var(--color-highlight);
   }
   menu li.current:first-child + li {
     margin-top: 0;
