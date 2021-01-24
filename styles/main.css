@@ -94,9 +94,9 @@ section.cover {
 img {
   float: left;
   margin-right: 20px;
-  box-sizing: border-box;
   margin-bottom: var(--spacing-xs);
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
 }
 
       /* * * * * * * */
