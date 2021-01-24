@@ -40,7 +40,6 @@ body, h1, h2, h3, p, blockquote, ul, li, a {
   font-size: 1rem;
   font-weight: 400;
 }
-
       /* * * * * */
       /* layout  */
       /* * * * * */
@@ -95,7 +94,7 @@ h1 {
   display: inline-block;
   border-bottom: 2px solid var(--color-highlight);
   font-size: 6rem;
-  font-weight: 400;
+  font-weight: 300;
   font-style: italic;
 }
 h1:not(.main) {
@@ -108,7 +107,6 @@ h1.main {
   right: 100px;
   border: 2px solid var(--color-highlight);
   padding: 10px 30px;
-  font-style: italic;
   text-align: center;
   color: var(--color-highlight);
   transition: background-color 0.3s;
