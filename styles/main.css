@@ -163,7 +163,7 @@ menu {
   top: 20px;
   right: 20px;
   margin: 0;
-  border: 2px solid var(--color-hover);
+  border: 2px solid var(--color-highlight);
   padding-inline-start: 0;
   padding: 10px 0;
   min-width: 100px;
@@ -227,7 +227,6 @@ menu a {
   }
   menu {
     position: absolute;
-    border: 2px solid var(--color-highlight);
   }
   .home menu {
     left: 20px;
