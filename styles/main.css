@@ -140,10 +140,6 @@ p.address + p.address {
   margin-top: -30px;
 }
 
-section.contact p {
-  margin: 100px 0;
-}
-
 a {
   font-size: inherit;
   font-weight: inherit;
