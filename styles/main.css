@@ -59,7 +59,7 @@ section.cover {
   border-top: none;
   height: 100vh;
   width: 100vw;
-  background: url(../images/Whalen-cover.jpeg) no-repeat center 30% fixed;
+  background: url(https://poetsinneed.com/images/Whalen-cover.jpeg) no-repeat center 30% fixed;
   background-size: cover;
 }
 .content {
@@ -202,7 +202,11 @@ menu a {
   }
   .content {
     min-height: 0;
+    padding-top: 275px;
     padding-bottom: 75px;
+  }
+  h1:not(.main) {
+    top: 150px;
   }
   h1.main {
     box-sizing: border-box;
@@ -222,9 +226,6 @@ menu a {
   }
   menu li.current:first-child + li {
     margin-top: 0;
-  }
-  menu li.current {
-    display: none;
   }
 }
 
